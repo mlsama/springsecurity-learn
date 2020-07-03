@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登陆页面</title>
+</head>
+
+<body>
+    <!-- 登陆路径在主配置类配置即可,默认是/login,必须要是post方法提交,
+        数据要求是表单类型的数据(1=2&2=3),如果是vue的axios()发生请求,需要进行数据类型转换
+    -->
+    <form action="/api/user/login" method="post">
+        用户名: <input type="text" name="username"/>
+        密码:   <input type="password" name="password"/>
+        <input type="submit" value="提交"/>
+    </form>
+</body>
+</html>

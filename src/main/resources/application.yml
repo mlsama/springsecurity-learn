@@ -1,0 +1,19 @@
+server:
+  port: 9090
+  servlet:
+    session:
+      timeout: 60 # 60s
+spring:
+  datasource:
+    username: SCOTT
+    password: ml
+    url: jdbc:oracle:thin:@127.0.0.1:1521:orcl
+    driver-class-name: oracle.jdbc.OracleDriver  #Orcale9之后就将oracle.jdbc.driver.OracleDriver改为oracle.jdbc.OracleDriver
+    type: com.alibaba.druid.pool.DruidDataSource
+mybatis:
+  # 别名
+  typeAliasesPackage: com.mlsama.springsecurity.entity
+  # 加载配置
+  configLocation: classpath:mybatis/mybatis-config.xml
+  # 指定xml路径
+  #mapperLocations: classpath:mybatis/mapper/**/*Mapper.xml
