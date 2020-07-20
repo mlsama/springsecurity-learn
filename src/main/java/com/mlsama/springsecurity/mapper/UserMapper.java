@@ -35,5 +35,5 @@ public interface UserMapper extends Mapper<SysUser> {
             @Result(column = "ID",property = "grantKeys",javaType=List.class,
             many = @Many(select = "com.mlsama.springsecurity.mapper.GrantKeyMapper.selectUserGrantKeys"))
     })
-    SysUser selectUserByYsername(String username);
+    SysUser selectUserByUsername(String username);
 }

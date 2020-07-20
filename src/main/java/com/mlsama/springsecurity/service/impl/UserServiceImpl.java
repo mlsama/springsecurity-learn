@@ -29,7 +29,7 @@ public class UserServiceImpl implements UserService {
      */
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        SysUser sysUser = userMapper.selectUserByYsername(username);
+        SysUser sysUser = userMapper.selectUserByUsername(username);
         if (sysUser == null) {
             throw new UsernameNotFoundException(username + "不存在");
         }

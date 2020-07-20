@@ -17,3 +17,7 @@ mybatis:
   configLocation: classpath:mybatis/mybatis-config.xml
   # 指定xml路径
   #mapperLocations: classpath:mybatis/mapper/**/*Mapper.xml
+
+logging:
+  level:
+    com.mlsama.springsecurity.mapper: debug #打印SQL
